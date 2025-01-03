@@ -26,4 +26,4 @@ EXPOSE 8000 5678
 #CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 
 # Run the application with debugpy
-CMD ["python", "-m", "debugpy", "--wait-for-client", "--listen", "0.0.0.0:5678", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "-m", "debugpy", "--listen", "0.0.0.0:5678", "manage.py", "runserver", "0.0.0.0:8000"]
